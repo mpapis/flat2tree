@@ -17,7 +17,7 @@ Initialize + enter data for examples:
       "John"=>[]
     }.map{|name, list| Flat2Tree::Entry.new(name, list)}
 
-## Example print dependency tree from starting point
+## Example: print dependency tree from starting point
 
 `.to_s` produces tree like output compatible with YAML.
 
@@ -26,7 +26,7 @@ Initialize + enter data for examples:
     Kate:
         - John
 
-## Example print dependency tree
+## Example: print dependency tree
 
 When no starting node name is given an nameless root container is created, use `.nodes` to get array.
 
@@ -40,7 +40,7 @@ When no starting node name is given an nameless root container is created, use `
         - John
     John
 
-## Example print simplified reverse dependency tree
+## Example: print simplified reverse dependency tree
 
 It is also to reverse the dependency tree so last leafs end up as roots
 
